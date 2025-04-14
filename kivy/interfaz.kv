@@ -1,0 +1,23 @@
+
+<SimuladorLayout>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 15
+
+    Label:
+        text: "Simulador de Tarjetas"
+        font_size: 26
+        size_hint_y: None
+        height: self.texture_size[1] + 20
+
+    Button:
+        text: "Generar Tarjeta y PIN"
+        size_hint_y: None
+        height: 50
+        on_release: root.generar_tarjeta()
+
+    Label:
+        id: resultado
+        text: ""
+        size_hint_y: None
+        height: 100
